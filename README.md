@@ -1,4 +1,3 @@
-[gyq.html](https://github.com/user-attachments/files/23329363/gyq.html)
 <!DOCTYPE html>
 <html>
 
