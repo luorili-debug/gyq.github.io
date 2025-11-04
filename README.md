@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -30,11 +29,9 @@
             const windowElement = document.createElement('div');
             windowElement.className = 'tip-window';
 
-            // 随机位置
             const x = Math.random() * (window.innerWidth - 250);
             const y = Math.random() * (window.innerHeight - 180);
 
-            // 随机内容和背景
             const tip = tips[Math.floor(Math.random() * tips.length)];
             const bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
@@ -45,18 +42,15 @@
 
             document.body.appendChild(windowElement);
 
-            // 点击关闭单个窗口
             windowElement.addEventListener('click', function () {
                 this.remove();
             });
         }
 
-        // 创建多个窗口
-        for (let i = 0; i < 60; i++) {
+        for (let i = 0; i < 50; i++) {
             setTimeout(createTipWindow, i * 100);
         }
 
-        // 按空格关闭所有窗口
         document.addEventListener('keydown', function (event) {
             if (event.code === 'Space') {
                 const windows = document.querySelectorAll('.tip-window');
