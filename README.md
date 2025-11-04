@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" <title>To 阿妍儿</title>
+    <meta charset="UTF-8">
+    <title>To 阿妍儿</title>
     <style>
         .tip-window {
             position: fixed;
